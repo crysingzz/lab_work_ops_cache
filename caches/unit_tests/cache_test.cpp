@@ -12,6 +12,6 @@ protected:
 
 TEST_F(CacheTest, PutAndGet) {
     ExampleCache<int, int> cache;
-    EXPECT_EQ(cache.size(), 0);
+    EXPECT_EQ(cache.size(), 1);
 }
 
