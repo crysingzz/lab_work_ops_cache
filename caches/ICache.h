@@ -1,14 +1,10 @@
 #pragma once
 #include <string>
 
-
-// Interface (Abstract Base Class)
 template<typename Key, typename Value>
 class ICache {
 public:
     virtual ~ICache() = default;
-    
-    // Pure virtual methods
     virtual void set(const Key& key, const Value& value) = 0;
     virtual Value get(const Key& key) = 0;
     virtual bool contains(const Key& key) const = 0;
